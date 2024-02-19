@@ -1,0 +1,27 @@
+snippet beg
+	#ifdef DEBUG
+	#define _GLIBCXX_DEBUG
+	#endif
+	#include <bits/stdc++.h>
+	#pragma GCC optimize("O3,unroll-loops")
+	#pragma GCC target("avx2,bmi,bmi2,lzcnt,popcnt")
+	#define dbg(x) cout << __FUNCTION__ << ':' << __LINE__ << ' ' << #x << " = " << (x) << endl
+	#define all(x) (x).begin(), (x).end()
+	using ll = long long;
+	using ull = unsigned long long;
+	using namespace std;
+ 
+	int main() {
+		ios::sync_with_stdio(0);
+		cin.tie(0);
+		${0}
+		return 0;
+	}
+snippet begin
+	#include <iostream>
+	using namespace std;
+ 
+	int main() {
+		${0}
+		return 0;
+	}
